@@ -20,3 +20,11 @@ a {
     color: #3498db;
     text-decoration: none;
 }
+
+section, 
+article {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}

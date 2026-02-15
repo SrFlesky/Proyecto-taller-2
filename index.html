@@ -3,12 +3,12 @@
 <head>
     <meta charset="utf-8" />
     <title>About Juan Montenegro</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="top-bar">
-            <h1>Juan David Montenegro Realpe</h1>
-            
+            <h1 class="header-h1">Juan David Montenegro Realpe</h1>
+        <div class="top-bar">    
             <nav>
                 <ul>
                     <li><a href="#inicio">Inicio</a></li>
@@ -18,38 +18,55 @@
             </nav>
             
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/juan-david-montenegro-realpe-4581a4304/">LinkedIn</a>
-                <a href="https://github.com/SrFlesky">GitHub</a>
+                <ul>
+                <li><a href="https://www.linkedin.com/in/juan-david-montenegro-realpe-4581a4304/">LinkedIn</a></li>
+                <li><a href="https://github.com/SrFlesky">GitHub</a></li>
+                </ul>
             </div>
         </div>
     </header>
 
     <main>
-        <section id="inicio" class="top-content">
-            <img src="assets/img-me.jpeg" alt="Una foto mia" />
+        <section class="about-me">
+            <div class="about-container">
+                <div class="about-text">
+                    <h2>Sobre Mí</h2>
+                    <p>Soy Juan David Montenegro Realpe, próximo graduado de Ing en Nanotecnología, me apasiona la programación, estoy atrasado con mis tareas.</p>
+                    <p>
+                        Soy entusiasta de los cubos rubik, me gusta el ajedrez, los idiomas, bailar  y en general muchas cosas. Durante mi paso por la U pertenecí a varios semilleros, especialmente el de Termodinámica y Conversión de la Energía donde he trabajado con el software de código abierto OpenFOAM para simular el flujo turbulento en vertederos y canales con fines de diseño estructural, evaluando perfiles de interés como velocidades a la salida, presiones, coeficientes de arrastre, etc. También pertenecí al semillero de investigación agroindustrial donde exploré una metodología alternativa y verde para la extracción de biomoléculas a partir de subproductos de la industria camaronera colombiana.
+                    </p>
+
+                    <p>Por la parte del curso, desde niño me ha llamado la atención la programación, estando en el colegio modificaba los scripts de java para configurar servidores en Minecraft. Actualmente manejo python, tengo nociones de Java, C++, JS, MongoDB, Node, y estoy profundizando en el curso para de una vez darle especificidad al asunto (me falta práctica).</p>
+                </div>
+                <img src="assets/img-me.jpeg" alt="Una foto mia" />
+            </div>
         </section>
 
-        <article class="about-me">
-            <h2>Sobre Mí</h2>
-            <p>Soy Juan David Montenegro Realpe, próximo graduado de Ing en Nanotecnología, me apasiona la programación, estoy atrasado con mis tareas</p>
-        </article>
-
         <section id="proyectos" class="projects">
+        <div class="projects-container">
             <h2>Proyectos</h2>
             <ul>
                 <li>
                     <a href="https://github.com/SrFlesky">
-                        <strong>Proyecto falso 1</strong>
+                        <strong>Automatización de simulaciones en Open FOAM</strong>
                     </a>: 
-                    <em>Descripción del primer proyecto falso</em>
+                    <em>Este texto es para darle más longitud a la página, no tomar en serio. Usé python en conjunto con los comandos de bash para automatizar simulaciones que se hacían en OpenFOAM. Esto no requería lenguajes más eficientes, dado que lo único que se hacía era modificar los ficheros de entrada que contenían las características de cada caso. Era sencillo hacerlo en python y que el software ya se ejecute de por sí. Esto permitió ahorrar muuucho tiempo, dado que uno nunca sabía cuándo una simulación iba a terminar. Adicionalmente plantee scripts para el postprocesado de toda la información, un trabajo bastante completo desde el ámbito investigativo, pero muy simple desde el lado de programación.</em>
                 </li>
                 <li>
                     <a href="https://github.com/SrFlesky">
-                        <strong>Proyecto falso 2</strong>
+                        <strong>Análisis de gráficas IR</strong>
                     </a>: 
-                    <em>Descripción del segundo proyecto falso</em>
+                    <em>Lo mismo de la anterior, usé python para leer los csv que me enviaban desde el laboratorio, normalmente uno hace un barrido de varias muestras y te entrega un espectro característicos. Aquellos que publican papers usan un software llamado Origin para darle esteticidad a las gráficas, pero esa vaina es lenta, me parecía que únicamente valía la pena hacerlo con las gráficas definitivas, así que hice un script que te leía todos los documentos que quisieras en un solo gráfico de forma automática y separada, con opción de verlos individual (separados verticalmente) o verlos sobrepuestos para hacer un mejor análisis. En algún punto también incluí el script en el módulo de Origin para hacer las gráficas todas lindas automáticamente. Sí, me gustaba más eso que ponerme a analizar las vibraciones moleculares.</em>
+                </li>
+
+                <li>
+                    <a href="https://github.com/SrFlesky">
+                        <strong>Arriendos Management</strong>
+                    </a>: 
+                    <em>Tengo un proyecto personal donde estoy usando Node.js, Typescript (intentando), MongoDB, JWT y lo que voy averiguando para hacer una app (o web wrapper por lo que veo) que me permita centralizar toda la info que tengo de una base de datos de arrendamientos que me conseguí por ahí. Aún voy en desarrollo, vamo viendo.</em>
                 </li>
             </ul>
+        </div>
         </section>
     </main>
 
